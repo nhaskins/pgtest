@@ -46,5 +46,6 @@ var app = {
 
         console.log('Received Event: ' + id);
         alert("device ready pass");
+        window.open('http://apache.org', '_system', 'location=yes');
     }
 };
