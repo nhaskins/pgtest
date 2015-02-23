@@ -46,7 +46,8 @@ var app = {
 
         console.log('Received Event: ' + id);
         alert("device ready pass");
-        var ref = window.open('http://google.com', '_system', 'location=yes');
+        var url = "http://maps.google.com/maps?daddr=51%20N%20Gore%20Ave.%20Webster%20Groves,%20MO%2063119"
+        var ref = window.open(url, '_system', 'location=yes');
         ref.addEventListener('loadstart', function() { alert(event.url); });
 
 
