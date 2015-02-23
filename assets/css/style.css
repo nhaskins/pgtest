@@ -1,0 +1,156 @@
+body {overflow:hidden;}
+
+/* bottom nav panel */
+#mainSplash {
+  height:100%;
+  z-index: 900000;
+  background: #8dd4dc;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#mainSplash img {
+  max-width:100%;
+  max-height: 100%;
+}
+#mainBox{
+  margin:0;
+  padding:0;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background:#ffffff;
+  opacity: 0.90;
+  display:none;
+  position:absolute;
+  z-index: 100000;
+}
+#mbTownships {display:none;padding-bottom:50px;}
+#mbFavorites {display:none;max-height: 300px;}
+#bottomPanel {
+  padding:5px 5px 5px;
+  text-align:center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  background: white;
+  border-top: 3px solid #5eb5ad;
+  height: 25px;
+  width: 100%;
+  opacity: 0.90;
+  overflow: hidden;
+  z-index: 100001;
+  overflow-x: hidden;
+}
+
+#bottomPanel ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#bottomPanel ul li {
+  display: inline;
+  margin-right:20px;
+  font-weight: bold;
+}
+#favoritesList {
+  list-style-type: none;
+  padding: 10px;
+  margin:0;
+}
+#favoritesList li {
+  font-weight: bold;
+  line-height: 1.8em;
+  font-size: 1.2em;
+  list-style-type: none;
+  padding: 5px;
+  margin: 0;
+
+}
+/* info window */
+.infoWindow {
+  line-height: 1.2em;
+  font-size: 1em;
+}
+.infoWindow .get_directions{
+  font-size:.8em
+}
+.infoWindow h1{
+  font-size: 1.2em;
+  font-weight:bold;
+  color:#5eb5ad;
+}
+.infoWindow .type_item {
+  display:inline;
+  list-style: none;
+}
+.infoWindow .type_item:after {
+  content: ',';
+}
+.infoWindow .type_item:last-of-type:after {
+  content: '.';
+}
+.infoWindow .boutique_logo {
+  max-height: 100px;
+  width: 100%;
+  margin-bottom: 10px;
+
+}
+.infoWindow .social_icon {
+  width: 20px;
+}
+.infoWindow .ext_link{
+  font-weight:bold;
+  line-height: 2em;
+
+}
+
+#googleMap img { max-width: none;}
+
+.townshipTile {
+  margin-bottom: 1em;
+  font-size: 1.2em;
+  list-style: none;
+}
+
+.townshipContainer .townshipSearchTitle {
+  font-weight: bold;
+  color: #5eb5ad;
+  text-transform: capitalize;
+  font-size: 1.2em;
+  padding-top: 1.2em;
+}
+.townshipTile .buttonTownship {
+  color: #5eb5ad;
+  text-transform: capitalize;
+  font-size: 1.2em;
+  font-weight:bold;
+}
+.buttonTownship {
+  padding-bottom: 10em;
+}
+
+hr {
+  margin:1.5em 0;
+  border-top: 1px solid #5eb5ad;
+}
+.townshipContainer {
+  margin: .5em;
+  padding-left: .5em;
+
+}
+.searchLinks {
+  font-weight: bold;
+  line-height: 1.8em;
+
+}
+
+
+.buttonBoutique {
+  font-weight: bold;
+  line-height: 1.8em;
+}
+.buttonDeleteFav {margin-right: .2em;}
+.buttonAddFavorite {font-weight: bold;}
