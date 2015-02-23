@@ -46,6 +46,9 @@ var app = {
 
         console.log('Received Event: ' + id);
         alert("device ready pass");
-        window.open('http://apache.org', '_system', 'location=yes');
+        var ref = window.open('http://google.com', '_system', 'location=yes');
+        ref.addEventListener('loadstart', function() { alert(event.url); });
+
+
     }
 };
