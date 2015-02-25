@@ -39,8 +39,7 @@ jQuery(document).ready(function($){
 
     jQuery(document).on('click', '.ext_link', function(e){
       e.preventDefault();
-      alert('click caught 2');
-      var url = "https://twitter.com/foo";
+      var url = $(this).attr('href');
       var ref = window.open(url, '_system', 'location=yes');
     });
 
