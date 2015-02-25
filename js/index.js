@@ -34,11 +34,14 @@ jQuery(document).ready(function($){
     document.addEventListener('deviceready', onDeviceReady, false);
 
     function onDeviceReady(){
-      jQuery(document).on('click', '.ext_link', function(e){
-        e.preventDefault();
-        alert('click caught 2');
-        var url = "https://twitter.com/adobe";
-        var ref = window.open(url, '_system', 'location=yes');
-      });
+      alert("onDeviceReady");
     }
+
+    jQuery(document).on('click', '.ext_link', function(e){
+      e.preventDefault();
+      alert('click caught 2');
+      var url = "https://twitter.com/foo";
+      var ref = window.open(url, '_system', 'location=yes');
+    });
+
 });
