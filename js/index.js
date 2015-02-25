@@ -27,3 +27,7 @@ var app = {
         ref.addEventListener('loadstart', function() { alert(event.url); });
     }
 };
+
+jQuery(document).ready(function($){
+    console.log("foobar");
+});
