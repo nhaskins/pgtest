@@ -29,8 +29,9 @@
 // };
 
 jQuery(document).ready(function($){
+
     console.log("foobar");
-    addEventListener('deviceready', onDeviceReady, false);
+    document.addEventListener('deviceready', onDeviceReady, false);
 
     function onDeviceReady(){
         receivedEvent('deviceready');
