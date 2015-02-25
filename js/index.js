@@ -37,7 +37,8 @@ jQuery(document).ready(function($){
         receivedEvent('deviceready');
     }
     function receivedEvent(id){
-        var url = "https://twitter.com/nhaskins";
-        var ref = window.open(url, '_system', 'location=yes');
+
+        // var url = "https://twitter.com/nhaskins";
+        // var ref = window.open(url, '_system', 'location=yes');
     }
 });
