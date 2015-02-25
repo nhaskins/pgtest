@@ -1,4 +1,4 @@
-
+// plain _system link in markup doesn't work
 // var app = {
 
 //     initialize: function() {
@@ -34,11 +34,12 @@ jQuery(document).ready(function($){
     document.addEventListener('deviceready', onDeviceReady, false);
 
     function onDeviceReady(){
+        console.log("fired onDeviceReady");
         receivedEvent('deviceready');
     }
     function receivedEvent(id){
-
-        // var url = "https://twitter.com/nhaskins";
-        // var ref = window.open(url, '_system', 'location=yes');
+        console.log("fired receivedEvent");
+        var url = "https://twitter.com/nhaskins";
+        var ref = window.open(url, '_system', 'location=yes');
     }
 });
