@@ -38,8 +38,9 @@ jQuery(document).ready(function($){
     }
     function receivedEvent(id){
         jQuery(document).on('click', '.ext_link', function(e){
-            alert('click caught');
-            var url = "https://twitter.com/nhaskins";
+            e.preventDefault();
+            alert('click caught 2');
+            var url = "https://twitter.com/uri";
             var ref = window.open(url, '_system', 'location=yes');
         });
     }
