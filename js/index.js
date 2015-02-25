@@ -24,7 +24,7 @@ var app = {
         // var url = "mailto:nathan@haskins.it"
         var url = "http://facebook.com/neight401";
         var ref = window.open(url, '_system', 'location=yes');
-        ref.addEventListener('loadstart', function() { alert(event.url); });
+        // ref.addEventListener('loadstart', function() { alert(event.url); });
     }
 };
 
