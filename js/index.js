@@ -1,3 +1,4 @@
+//time to test iOS handling
 // plain _system link in markup doesn't work
 // var app = {
 
@@ -34,7 +35,8 @@ jQuery(document).ready(function($){
     document.addEventListener('deviceready', onDeviceReady, false);
 
     function onDeviceReady(){
-      alert("onDeviceReady");
+
+      alert("onDeviceReady: "+device.platform);
     }
 
     jQuery(document).on('click', '.ext_link', function(e){
