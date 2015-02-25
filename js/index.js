@@ -45,8 +45,8 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-        alert("device ready pass");
-        var url = "http://maps.google.com/maps?daddr=51%20N%20Gore%20Ave.%20Webster%20Groves,%20MO%2063119"
+        alert("device ready pass!!");
+        var url = "http://maps.google.com/maps?daddr=51 N Gore Ave. Webster Groves, MO 63119"
         var ref = window.open(url, '_system', 'location=yes');
         ref.addEventListener('loadstart', function() { alert(event.url); });
 
