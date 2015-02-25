@@ -34,12 +34,13 @@ jQuery(document).ready(function($){
     document.addEventListener('deviceready', onDeviceReady, false);
 
     function onDeviceReady(){
-        console.log("fired onDeviceReady");
         receivedEvent('deviceready');
     }
     function receivedEvent(id){
-        console.log("fired receivedEvent");
-        var url = "https://twitter.com/nhaskins";
-        var ref = window.open(url, '_system', 'location=yes');
+        jQuery(document).on('click', '.ext_link', function(e){
+            alert('click caught');
+            var url = "https://twitter.com/nhaskins";
+            var ref = window.open(url, '_system', 'location=yes');
+        });
     }
 });
