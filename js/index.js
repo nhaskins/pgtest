@@ -20,7 +20,8 @@ var app = {
 
         console.log('Received Event: ' + id);
         alert("device ready pass!!");
-        var url = "http://maps.google.com/maps?daddr=51 N Gore Ave. Webster Groves, MO 63119"
+        // var url = "http://maps.google.com/maps?daddr=51 N Gore Ave. Webster Groves, MO 63119"
+        var url = "mailto:nathan@haskins.it"
         var ref = window.open(url, '_system', 'location=yes');
         ref.addEventListener('loadstart', function() { alert(event.url); });
     }
